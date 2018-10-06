@@ -1,0 +1,26 @@
+Maria Costin Bogdan
+333CB
+
+In t1.h am declarat o structura table in care memorez marimea hashmap-ului. Tot acolo am un pointer catre o alta structura(node), care este practic o lista dublu inlantuita.In acest fisier mai am si niste headere ale unor functii pe care le folosesc in fisierul t1_f.c
+In t1_f.c am mai multe functii, care au fost declarate in t1.h.
+	InitTable = face alocarea unui hashmap
+	insertNodeEmptyList = insereaza un element intr-o lista care era goala
+	insertNodeNotEmpty = insereaza un element intr-o lista care nu era goala
+	removeString = sterge un element dintr-un hashmap
+	afisHash = o functie care afiseaza hashmap-ul
+	insert = o functie care face inserearea intr-un hashmap
+	remove = functia care sterge un element dintr-un hashmap, aceasta apeleaza removeString
+	elib = elibereaza o lista
+	clearr = elibereaza un hashmap
+	cauta = functie care cauta un string intr-un hashmap
+
+In tema1.c am urmatoarele functii:
+	copyy = copiaza un hashmap intr-un alta hashmap. Aceasta functie este folosita pentru resize
+	resizeDouble = dubleaza capacitatea unui hashmap
+	resizeHalf = injumatateste capacitatea unui hashmap
+	exista = returneaza 1 daca un string exista intr-un hashmap si 0 in caz contrar
+	readFromFile = este functia care imi citeste din fisier.Aceasta functie citeste linie cu linie din fisier si imparte linia cu strtok, dupa care in functie de comanda apeleaza functiile respective(de exemplu add, remove)
+In main aloc hashmap-ul cu dimensiunea initiala, dupa care apelez functia readFromFile care imi va realiza operatiile.
+
+
+PS: Nu am facut coding style-ul, nu am avut rabdare :( Stiu ca la unele functii le-am dat nume gen Java style(insertNodeEmptyList), acest lucru ma ajuta pe mine sa le retin numele.
